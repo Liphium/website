@@ -1,0 +1,84 @@
+/* LAYOUT */
+
+:root {
+  --text: #e5f5eb;
+  --sec-text: #909d95;
+  --background: #04090c;
+  --header-bg: #2a56926e;
+  --secondary-action: #1d2c30;
+  --primary: #084a61;
+  --secondary: #2b5152;
+  --accent: #4ed6f1;
+  --accent-shadow: #7aa0d142;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-size: 125%;
+  line-height: 1.5;
+  max-width: 45rem;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.content {
+  margin-bottom: 2rem;
+}
+
+/* NAVIGATION */
+
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+
+  a {
+    color: var(--text);
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-weight: bold;
+    color: var(--text);
+  }
+
+  img {
+    width: 1.8em;
+    height: 1.8em;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+
+  .site-nav,
+  .main-menu {
+    flex-direction: column;
+  }
+
+  .site-nav a {
+    padding: 0.5rem;
+    padding-left: 0;
+  }
+}
+
+/* LISTS */
+
+.post-snippet {
+  margin-bottom: 1rem;
+}
+
+.post-snippet h3 {
+  margin-bottom: 0.25rem;
+}

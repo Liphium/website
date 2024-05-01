@@ -1,0 +1,29 @@
+baseURL = 'https://liphium.com/'
+languageCode = 'en-us'
+title = 'Liphium Software'
+
+
+[menu]
+[[menu.main]]
+identifier = "chat"
+name = "Chat"
+url = "/chat"
+weight = 5
+
+[[menu.main]]
+identifier = "service"
+name = "Services"
+url = "/services"
+weight = 10
+
+[[menu.main]]
+identifier = "docs"
+name = "Documentation"
+url = "/docs"
+weight = 20
+
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/blog"
+weight = 30
