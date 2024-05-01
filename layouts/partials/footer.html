@@ -1,8 +1,23 @@
+{{ $currentPage := . }}
+
 </main>
-	
+
 <footer>
-	<p>&copy;{{ dateFormat "2006" now }} {{ .Site.Title }}</p>
+	<p>Copyright &copy; {{ dateFormat "2006" now }} {{ .Site.Title }}</p>
+
+	{{ range .Site.Menus.footer }}
+
+	{{ $menu_item_url := .URL | relLangURL }}
+	{{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+
+	<a class="{{ if eq $menu_item_url $page_url}}active{{ end }}" href="{{ .URL }}">
+		{{ .Name }}
+	</a>
+
+
+	{{ end }}
 </footer>
 
 </body>
+
 </html>
