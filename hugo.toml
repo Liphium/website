@@ -4,10 +4,6 @@ title        = 'Liphium'
 [menu]
   # The main menu
   [[menu.main]]
-    name   = "Chat"
-    url    = "/chat/"
-    weight = 1
-  [[menu.main]]
     name   = "Services"
     url    = "/services/"
     weight = 2
@@ -19,6 +15,10 @@ title        = 'Liphium'
     name   = "Blog"
     url    = "/blog/"
     weight = 4
+  [[menu.main]]
+    name   = "Donate"
+    url    = "/support/"
+    weight = 5
   # Menu for the footer
   [[menu.footer]]
     name   = "Home"
