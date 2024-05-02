@@ -15,6 +15,7 @@
   --text: #e5f5eb;
   --sec-text: #909d95;
   --background: #04090c;
+  --background2: #17232c;
   --header-bg: #2a56926e;
   --secondary-action: #1d2c30;
   --primary: #084a61;
@@ -28,9 +29,12 @@ body {
   color: var(--text);
   font-size: 125%;
   line-height: 1.5;
-  max-width: 60rem;
   padding: 1rem;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
@@ -62,6 +66,11 @@ body {
 
 .sec-text {
   color: var(--sec-text);
+}
+
+.no-pad {
+  padding: 0;
+  margin: 0;
 }
 
 /* NAVIGATION */
@@ -141,6 +150,11 @@ footer {
 }
 
 /* HEADERS */
+
+.hero-small {
+  font-size: 200%;
+  text-decoration: underline dashed var(--accent);
+}
 
 .hero {
   font-size: 300%;

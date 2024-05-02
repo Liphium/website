@@ -1,30 +1,32 @@
 {{ partial "header.html" . }}
 
-<div class="center column full-height">
-    <img class="hero-logo" src="/logo.png">
-    <h1 class="hero">A chat app with more fun.</h1>
-    <p class="hero-text sec-text">
-        We could say we're doing something incredible. But the truth is, we really just add features no-one
-        else thinks about implementing and that makes Liphium a really interesting place.
-    </p>
-</div>
-
-<div class="features">
-
-    <div class="row aos">
-        {{ range .Params.features }}
-        <div class="desc">
-            <span class="material-symbols">{{ .icon }}</span>
-            <h2>{{ .heading }}</h2>
-            <p class="sec-text">
-                {{ .description }}
-            </p>
-        </div>
-        {{ end }}
+<div class="main">
+    <div class="center column full-height">
+        <img class="hero-logo" src="/logo.png">
+        <h1 class="hero">A chat app with more fun.</h1>
+        <p class="hero-text sec-text">
+            We could say we're doing something incredible. But the truth is, we really just add features no-one
+            else thinks about implementing and that makes Liphium a really interesting place.
+        </p>
     </div>
-</div>
 
-<div class="spacer"></div>
+    <div class="features">
+
+        <div class="row aos">
+            {{ range .Params.features }}
+            <div class="desc">
+                <span class="material-symbols">{{ .icon }}</span>
+                <h2>{{ .heading }}</h2>
+                <p class="sec-text">
+                    {{ .description }}
+                </p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+</div>
 
 <style>
     .features .row {
@@ -52,6 +54,10 @@
             color: var(--text);
             line-height: 1.5;
         }
+    }
+
+    .main {
+        max-width: 70rem;
     }
 </style>
 

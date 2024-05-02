@@ -4,17 +4,17 @@ title        = 'Liphium'
 [menu]
   # The main menu
   [[menu.main]]
-    name   = "Services"
-    url    = "/services/"
+    name   = "GitHub"
+    url    = "https://github.com/Liphium"
     weight = 2
   [[menu.main]]
     name   = "Documentation"
     url    = "/docs/"
     weight = 3
-  [[menu.main]]
-    name   = "Blog"
-    url    = "/blog/"
-    weight = 4
+  # [[menu.main]]
+  #   name   = "Blog"
+  #   url    = "/blog/"
+  #   weight = 4
   [[menu.main]]
     name   = "Donate"
     url    = "/support/"
