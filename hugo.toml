@@ -17,7 +17,7 @@ title        = 'Liphium'
   #   weight = 4
   [[menu.main]]
     name   = "Donate"
-    url    = "/support/"
+    url    = "/donate/"
     weight = 5
   # Menu for the footer
   [[menu.footer]]

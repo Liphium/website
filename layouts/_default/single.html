@@ -1,7 +1,43 @@
 {{ partial "header.html" . }}
+{{ $currentPage := . }}
 
-<h1>{{ .Title }}</h1>
+<div class="content">
+    <h1 class="hero-small no-pad">{{ .Title }}</h1>
+    {{ .Content }}
+</div>
 
-{{ .Content }}
+<style>
+    .content {
+        margin-top: 1em;
+        max-width: 60em;
 
+        h1 {
+            margin-top: 3.2em;
+        }
+
+        h2 {
+            margin-top: 1.8em;
+        }
+
+        h3 {
+            margin-top: 1em;
+        }
+
+        code {
+            background-color: var(--background2);
+            padding: 0.4em;
+            border-radius: 0.4em;
+            font-family: monospace;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+</style>
 {{ partial "footer.html" . }}
