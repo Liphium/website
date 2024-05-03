@@ -2,7 +2,8 @@
 title: "Privacy Policy and Terms of Service"
 ---
 		
-**Effective: 24.04.2024, last updated: 24.04.2024** \n
+**Effective: 24.04.2024, last updated: 24.04.2024**
+
 Your privacy and security matters to us, which is why we collect only minimal amounts of information
 that are needed to enhance user experience and help us better understand how Liphium is used within
 our network of self-hosted servers anyone can host. If you've got any further questions, just go
