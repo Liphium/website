@@ -4,7 +4,13 @@
 <head>
 
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1." />
+
+	<meta content="{{ .Title }}" property="og:title" />
+	<meta content="{{ .Params.description }}" property="og:description" />
+	<meta content="https://liphium.com" property="og:url" />
+	<meta content="https://liphium.com/favicon.png" property="og:image" />
+	<meta content="#0a96ea" data-react-helmet="true" name="theme-color" />
 
 	<title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
 

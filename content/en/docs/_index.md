@@ -1,5 +1,6 @@
 ---
-title: "Liphium documentation"
+title: "Liphium Documentation"
+description: "The place where you can learn about the Liphium app and server."
 ---
 
 It's hard to write an introduction page for your documentation, so I'll just explain what Liphium is here. If you already know that, go somewhere else or something. You can go talk to the support too if you have any problems, but please only do that if you didn't find your problem here. On the other hand, the people who just open random tickets wouldn't read this anyway.

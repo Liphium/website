@@ -2,6 +2,6 @@
 date: '{{ .Date }}'
 draft: true
 title: '{{ replace .File.ContentBaseName `-` ` ` | title }}'
-params:
-    author: "Your name"
+author: "Your name"
+description: "A short description for embeds."
 ---

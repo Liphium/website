@@ -1,5 +1,6 @@
 ---
 title: "Privacy Policy and Terms of Service"
+description: "Find out more about how we collect and use your data."
 ---
 		
 **Effective: 24.04.2024, last updated: 24.04.2024**

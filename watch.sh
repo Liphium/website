@@ -1,1 +1,1 @@
-hugo server --noHTTPCache
+hugo server --noHTTPCache --disableFastRender

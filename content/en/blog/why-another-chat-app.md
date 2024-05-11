@@ -1,8 +1,8 @@
 ---
 title: "Why another chat app?"
 date: '2024-05-11T16:42:56+02:00'
-params:
-    author: "Unbreathable"
+description: "A short dive into why Liphium was built."
+author: "Unbreathable"
 ---
 
 This is the first question people ask me when I tell them I work on a chat app. We have so many of them. Some startups even make chat apps to make all chat apps one chat app, so we no longer have to deal with all the clutter on our home screen. So why did I decide to create a new one? Is there really nothing out there that can meet all of my criteria?

@@ -1,5 +1,6 @@
 ---
-title: "Liphium gaming"
+title: "Liphium"
+description: "A chat app with more fun (hopefully)."
 features:
   - heading: Completely decentralized
     icon: public
