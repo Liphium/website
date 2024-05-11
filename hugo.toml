@@ -11,10 +11,10 @@ title        = 'Liphium'
     name   = "Documentation"
     url    = "/docs/"
     weight = 3
-  # [[menu.main]]
-  #   name   = "Blog"
-  #   url    = "/blog/"
-  #   weight = 4
+  [[menu.main]]
+    name   = "Blog"
+    url    = "/blog/"
+    weight = 4
   [[menu.main]]
     name   = "Donate"
     url    = "/donate/"

@@ -3,6 +3,9 @@
 
 <div class="written">
     <h1 class="hero-small no-pad">{{ .Title }}</h1>
+    <p class="sub"><strong>{{ .Date.Format "January 2, 2006" }}</strong>, <em>by {{ .Params.author
+            }}</em>
+    </p>
     {{ .Content }}
 </div>
 
@@ -38,6 +41,10 @@
                 text-decoration: underline;
             }
         }
+    }
+
+    .sub {
+        margin-top: 0.5em;
     }
 </style>
 {{ partial "footer.html" . }}

@@ -1,18 +1,48 @@
 {{ partial "header.html" . }}
 
-<h1>{{ .Title }}</h1>
+<h1 class="hero-small">{{ .Title }}</h1>
 
 {{ .Content }}
 
-{{ range.Data.Pages }}
-<article class="post-snippet">
-  <h3>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-  </h3>
-	<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-		{{ .Date.Format "January 2, 2006" }}
-	</time>
-</article>
-{{ end }}
+<div class="main">
+  {{ range.Data.Pages }}
+  <div class="article">
+    <h2 class="no-pad">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h2>
+    <p class="no-pad"><strong>{{ .Date.Format "January 2, 2006" }}</strong>, <em>by {{ .Params.author
+        }}</em>
+    </p>
+    <p class="no-pad sec-text">{{ .Summary }}</p>
+  </div>
+  {{ end }}
+</div>
+
+<style>
+  .main {
+    margin-top: 1em;
+    max-width: 50em;
+  }
+
+  .article:first-child {
+    margin-top: 0;
+  }
+
+  .article {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    a {
+      text-decoration: none;
+      color: var(--accent);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+</style>
 
 {{ partial "footer.html" . }}

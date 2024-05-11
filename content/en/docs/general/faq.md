@@ -1,5 +1,5 @@
 ---
-title: "Frequently asked"
+title: "Frequently asked questions"
 menus:
     1general:
         weight: 2
