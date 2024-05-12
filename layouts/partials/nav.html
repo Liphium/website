@@ -17,4 +17,29 @@
 
     {{ end }}
   </nav>
+  <nav class="mobile-nav">
+    <div class="header">
+      <a class="logo" href="{{ .Site.BaseURL }}">
+        <img src="/logo.png">
+      </a>
+
+      <button onclick="document.querySelector('#menu').classList.toggle('open')">
+        Menu
+      </button>
+    </div>
+
+    <div class="menu" id="menu">
+      {{ range .Site.Menus.main }}
+
+      {{ $menu_item_url := .URL | relLangURL }}
+      {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+
+      <a class="{{ if eq $menu_item_url $page_url}}active{{ end }}" href="{{ .URL }}">
+        {{ .Name }}
+      </a>
+
+
+      {{ end }}
+    </div>
+  </nav>
 </header>

@@ -111,16 +111,72 @@ body {
   }
 }
 
+.mobile-nav {
+  display: none;
+}
+
 @media screen and (max-width: 48rem) {
+
+  .site-header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
 
   .site-nav,
   .main-menu {
-    flex-direction: column;
+    display: none;
   }
 
-  .site-nav a {
-    padding: 0.5rem;
-    padding-left: 0;
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    button {
+      cursor: pointer;
+      font-size: 100%;
+      background: none;
+      border: none;
+      color: var(--accent);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    img {
+      width: 1.8em;
+      height: 1.8em;
+    }
+
+    .menu {
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+
+      a {
+        color: var(--text);
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .open {
+      display: flex !important;
+    }
   }
 }
 
@@ -133,15 +189,20 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 1.5em;
+  gap: 0em 1.5em;
 
   a {
+    padding: 0 !important;
     color: var(--accent);
     text-decoration: none;
 
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  p {
+    padding: 0 !important;
   }
 
   .active {
