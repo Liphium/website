@@ -16,7 +16,7 @@ features:
     description: We have lots of voice and audio settings, you can even set stuff like microphone sensitivity. This was actually the initial motivation to create this app, while we haven't delivered on it fully, it still works well enough.
   - heading: Never worry about that silly big file again
     icon: content_copy
-    description: With Live Share you can share files up to any size with your friends. Have that silly big video file you can't get across the globe? This system can help you with that.
+    description: With Zap Share you can share files up to any size with your friends. Have that silly big video file you can't get across the globe? This system can help you with that.
   - heading: Save all your favorite memes to one place
     icon: folder
     description: Most apps have stuff like stickers and GIFs and animated images you can spam people with. But creation is often hard, so on Liphium, you can save any image or GIF to your Library.
