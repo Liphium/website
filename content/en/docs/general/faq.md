@@ -14,8 +14,12 @@ Liphium is still in an alpha state, but if you are probably gonna try anyway. Yo
 
 ### Why make another chat app?
 
-That's actually a good question. Liphium was born out of the need to have an alternative to Discord that doesn't suck in terms of privacy and features. Me and my friends have been using Discord to communicate for a really long time. But the feature we mostly use are private messages and calls. And all of that is not end-to-end encrypted which honestly sucks. While trying out so many alternatives that were already out there, nothing was a great fit. The lacking audio settings were the biggest problem since we don't want to hear each other's background noise and it is still a miracle to me how other apps have not addressed this issue yet. I mean I can't blame them because they are mostly mobile focused anyway. Which is another problem, Discord is optimized for "gamers" and also for desktop usage while other apps have lacking features in this regard. With Liphium, we try to address all of these problems once and for all. You need to be the judge of wether we succeeded with this vision or not.
+I wrote a whole blog post about that. You can find it [here](/blog/why-another-chat-app.md).
 
 ### What is Liphium?
 
 Come on, if that's your question, just go to the main page or click on "Documentation" again in the navbar above the title of this documentation entry. I don't want to paste that gigantic thing into here again. You can just look at it there.
+
+### Why the f*** is the Liphium server using a restrictive license?
+
+Well, you see, for me as a solo developer working on this project for a couple of years now I want to make sure that no company can take the opportunity of selling the software I created from me. Open Source has a gigantic funding problem, and that's not anything new. I might eventually want to make money with this app, not by doing monetizing you or your data in the client app (that's why the app itself is under the GPL!), but by selling servers that have Liphium on them already. This isn't something I'm working on right now, but I want to have the possibility to be the only person selling these servers and to make a little bit of money off of it in the future.
