@@ -1,4 +1,4 @@
 ---
-title: "The Liphium tales"
+title: "Changes, decisions & updates"
 description: "We sometimes write blog posts here."
 ---

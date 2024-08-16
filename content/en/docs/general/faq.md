@@ -2,8 +2,8 @@
 title: "Frequently asked questions"
 description: "What you guys frequently ask us, the solution to your problem might be here!"
 menus:
-    1general:
-        weight: 2
+  1general:
+    weight: 2
 ---
 
 Welcome to our frequently asked questions page. If you have any question that should be listed here, please let us know! We'd like to expand this page to include as much information as possible because a lot of people only look for answers here.
@@ -14,7 +14,7 @@ Liphium is still in an alpha state, but if you are probably gonna try anyway. Yo
 
 ### Why make another chat app?
 
-That's actually a good question. Liphium was born out of the need to have an alternative to Discord that doesn't suck in terms of privacy and features. Me and my friends have been using Discord to communicate for a really long time. But the feature we mostly use are private messages and calls. And all of that is not end-to-end encrypted which honestly sucks. While trying out so many alternatives that were already out there, nothing was a great fit. The lacking audio settings were the biggest problem since we don't want to hear each other's background noise and it is still a miracle to me how other apps have not addressed this issue yet. I mean I can't blame them because they are mostly mobile focused anyway. Which is another problem, Discord is optimized for "gamers" and also for desktop usage while other apps have lacking features in this regard. With Liphium, we try to address all of these problems once and for all. You need to be the judge of wether we succeeded with this vision or not.
+I mostly just thought about chat apps really hard because I don't really use social media much. Through the desire for more features and better privacy across the social media stack, Liphium was born. Then there is also the lack of features in other messaging apps (such as Microphone sensitivity and more) that motivated me even more to make my own instead of building on top of an existing protocol like Matrix. And look what we have now. Zap, Tabletop and all the other things that make Liphium unique could not have been created without making everything from scratch.
 
 ### What is Liphium?
 

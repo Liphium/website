@@ -3,13 +3,13 @@
 <div class="main">
     <div class="center column full-height">
         <img class="hero-logo" src="/logo.png">
-        <h1 class="hero">A chat app with more fun.</h1>
+        <h1 class="hero">{{ .Params.hero.title }}</h1>
         <p class="hero-text sec-text">
-            We could say we're doing something incredible. But the truth is, we really just add features no-one
-            else thinks about implementing and that makes Liphium a really interesting place.
+            {{ .Params.hero.description }}
         </p>
     </div>
 
+    
     <div class="features">
 
         <div class="row aos">
@@ -37,6 +37,7 @@
         gap: var(--section-spacing);
         transition: transform 0.5s ease;
         gap: 5em;
+        padding: 0 2em;
 
         span {
             font-size: 50px;
@@ -53,6 +54,15 @@
             gap: var(--section-spacing);
             color: var(--text);
             line-height: 1.5;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+
+        .features .row {
+            padding: 0 0.5em !important;
+            display: flex;
+            flex-direction: column;
         }
     }
 

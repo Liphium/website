@@ -42,6 +42,7 @@ body {
 }
 
 .center {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,6 +54,10 @@ body {
 
 .hero-logo {
   width: 8rem;
+}
+
+span, img {
+  user-select: none;
 }
 
 .full-height {
@@ -111,16 +116,82 @@ body {
   }
 }
 
+.mobile-nav {
+  display: none;
+}
+
 @media screen and (max-width: 48rem) {
+
+  .site-header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
 
   .site-nav,
   .main-menu {
-    flex-direction: column;
+    display: none;
   }
 
-  .site-nav a {
-    padding: 0.5rem;
-    padding-left: 0;
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    button {
+      cursor: pointer;
+      font-size: 100%;
+      background: none;
+      border: none;
+      color: var(--text);
+      height: 30px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .logo, img {
+      width: 1.8em;
+      height: 1.8em;
+    }
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    left: calc(-250px - 2em);
+    width: 250px;
+    height: 100%;
+    background-color: var(--background2);
+    color: white;
+    padding: 1em;
+    transition: left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    a {
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: var(--accent);
+    }
+  }
+
+  .menu.open {
+    left: 0;
   }
 }
 
@@ -133,15 +204,20 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 1.5em;
+  gap: 0em 1.5em;
 
   a {
+    padding: 0 !important;
     color: var(--accent);
     text-decoration: none;
 
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  p {
+    padding: 0 !important;
   }
 
   .active {
@@ -163,4 +239,18 @@ footer {
 
 .spacer {
   height: 5em;
+}
+
+@media screen and (max-width: 900px) {
+  .hero {
+    text-align: center;
+    font-size: 200%;
+    width: calc(100% - 1em);
+    padding: 0em 0.5em;
+  }
+
+  .hero-text {
+    width: calc(100% - 2em);
+    padding: 0em 1em;
+  }
 }
