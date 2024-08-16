@@ -1,5 +1,5 @@
 ---
-title: "Liphium Documentation"
+title: "Documentation & guides"
 description: "The place where you can learn about the Liphium app and server."
 ---
 
@@ -9,12 +9,11 @@ It's hard to write an introduction page for your documentation, so I'll just exp
 
 If you are looking for a download button anywhere on the page, I'm sorry. Liphium is not available yet and that's why there is almost no documentation on how to set up a server. Key components are still missing for a full release and we would rather have you waiting than using the app right now. You can still check out what's on this page, if you are interested in what Liphium will be (once released).
 
-
 ## Okay, so what is Liphium?
 
 Man, we're already starting with one of the hardest questions. Fine. Liphium itself is the decentralized chat app, the one you just heard about when clicking on the main page. It can send messages, images, files and all kinds of other stuff. All in an end-to-end encrypted fashion. You can also do calls and all kinds of other stuff you would expect from a modern messenger. Since you probably want to know what the app can do in specific down to at least some detail, I made a list of all the features we currently have (more to come in the future):
 
-### Friends
+### Friends or contacts
 
 Liphium is all about you and your friends. Similar to other platforms that don't require a phone number, all Liphium accounts have usernames. Those **usernames** can be used to add people as friends on your local instance (the server you signed up for). To add people on other instances, you can generate a **friend code**. When the other user than types in your server together with your friends code, they can add you even across instances. This is what makes Liphium decentralized.
 
@@ -22,13 +21,13 @@ Liphium is all about you and your friends. Similar to other platforms that don't
 
 When you have friends added, you can start a conversation with them and start chatting away. One thing to know is that your messages are **end-to-end encrypted**. Sadly, there is currently no way to react to messages with emojis (but that's on the roadmap). Everything else most likely exists. We have **replies**, **formatting directives**, **emojis**, **file uploads** and so much other stuff (I probably even forgot things here).
 
-### Zap Share
+### File streaming (knows as Zap)
 
-While this name isn't final yet and still sounds kind of weird, the actual feature itself is alive and working. With it, you can easily send **files of any size** to one of your friends. It is currently only available in one-to-one conversations and only one transaction is allowed at a time. We look to expand the support for Zap Share to group conversations as well, but how we will implement that is still in the stars. Multiple files are also not supported currently. For that reason, the feature is locked behind an experimental flag.
+Send files of any size to anyone on your instance. Yes you heard that right. With Zap, you can easily send **files of any size** to one of your friends. It is currently only available in one-to-one conversations, only one transaction is allowed at a time and it's also currently not as fast as your internet connection would allow it to be. But I'm on the other hand always working to improve Zap, in fact, in the last update it [just got 2x faster](https://github.com/Liphium/chat_interface/releases/v0.1.3). I'm also looking to expand the support for Zap to group conversations as well, but how we will implement that is still in the stars. The feature is available by clicking the lightning bolt in any direct message on Liphium.
 
 ### Video and audio calls (we called them Spaces)
 
-When you want to chill with your buddies online, you will need video and audio calling, which we call Spaces. So, the immediate question might be why we renamed such a standard feature. And that question has a good answer. Spaces in Liphium aren't calls, because they are not limited to the group you are calling. You can invite anyone on the platform using **Space Sharing** through our status system. In Spaces, you can **talk**, turn on your **camera** and **share your screen** (currently limited to a couple of platforms) just like normal. For audio, we have additional settings like **microphone sensitivity** to make sure you don't hear everyone's background noise. 
+When you want to chill with your buddies online, you will need video and audio calling, which we call Spaces. So, the immediate question might be why we renamed such a standard feature. And that question has a good answer. Spaces in Liphium aren't calls, because they are not limited to the group you are calling. You can invite anyone on the platform using **Space Sharing** through our status system. In Spaces, you can **talk**, turn on your **camera** and **share your screen** (currently limited to a couple of platforms) just like normal. For audio, we have additional settings like **microphone sensitivity** to make sure you don't hear everyone's background noise.
 
 ### Tabletop & decks
 
