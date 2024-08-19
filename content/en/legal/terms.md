@@ -1,8 +1,10 @@
 ---
 title: "Privacy Policy and Terms of Service"
 description: "Find out more about how we collect and use your data."
+author: "Liphium team"
+date: "2024-04-24T11:12:29+02:00"
 ---
-		
+
 **Effective: 24.04.2024, last updated: 24.04.2024**
 
 We take your privacy and security seriously. On that note, this site doesn't collect a whole lot of data so that isn't too complicated. In this Privacy Policy we inform you how we process, potentially store and work with your information on our website, app and other services we may provide to you.
@@ -24,7 +26,6 @@ The usage requirements for our Services may vary per country, region or whatever
 
 We also take no responsibility for any misuse or abuse of our the software or apps we provide since we do not control how these apps are used and have no control over the instance they are connected to. We also do not take responsibility for any breaking of the law, data privacy incidents or security incidents on these instances for the same reasons. Please do not contact us in such cases, only if there is something we can do about it like when the used method is through an exploit we can patch in our server software (please contact us in such cases).
 
-
 # Privacy policy
 
 Our privacy policy is designed to help you find out how our Services handle "Personally identifiable information" ("PII", "personal information"). PII is information that can be used to identify contact or track a single person or individual in context. Please read this document carefully to make sure you understand how we handle your PII.
@@ -32,6 +33,7 @@ Our privacy policy is designed to help you find out how our Services handle "Per
 ## What personal information do we collect from visitors or users of our services?
 
 Our Services only collect minimal information and it differs per service we provide to you, so here's a list of all the things we collect in different places and why we collect it:
+
 - **The Liphium app.** The Liphium app is our cross-platform app that is available on almost any platform. It may prompt you take part in surveys or other ways for us to look at how you use the app (read more about that in the Terms of Service above). We use this information to enhance the user experience and make the app better for everyone. The Liphium app may also make requests to [GitHub](https://github.com) to check for updates and may also download the latest release from there. Their privacy policy safeguards this (please read it to see how your data is used). We also make regular requests to our Services to check if you have accepted our agreements (like the Terms of Service and the Privacy Policy) or if there are some other future use cases that may require connection to our Services. We do this to ensure you get a notification about important news and new versions of this agreement.
 - **On liphium.com and other websites we own.** This encompasses all websites within our Services. On these websites we don't currently collect any information about how you use our websites. However, [Cloudflare](https://cloudflare.com), our service provider for these Services, collects analytics every time you view any of them that they share with us. This includes everything you automatically share with them through a HTTP request like your IP address and the URL you're accessing, there may also be additional data not listed here. We may publish these analytics in anonymous manner, for example in a report or blog post to share growth numbers or other insights with our users. To know more about this information, please go to Cloudflare's Privacy Policy for this.
 
@@ -42,6 +44,7 @@ Our Services collect the outlined information either automatically or through yo
 ## How do we use your information?
 
 We may use the information you provide to us through earlier described actions in various ways:
+
 - **In the Liphium app.** A bit of how we use it is already outlined in the previous 2 paragraphs, but we would still like to inform you that we use this data to improve our services and give you a better product as a result. If you have any concerns about the data we collect inside of our Services, please contact us. The requests to GitHub occur to give you the latest and greatest updates we push out to users. We want to you to always be on the latest version so you can experience what we build for you, and even how we may use the data you may give to us.
 - **On liphium.com and other websites.** On our websites (included in our Services) we use the analytics data to review how certain projects or features are doing and how we may improve them in the future. The data Cloudflare provides to us is important for us to see how people interact with our website and how we may improve it in the future.
 

@@ -13,8 +13,11 @@
 
 {{ else }}
 
-<a class="{{ if eq $menu_item_url $page_url}}active{{ end }}" href="{{ .URL }}" href="{{ .URL }}">{{ .Title
-    }}</a>
+{{ if .Title }}
+
+<a class="{{ if eq $menu_item_url $page_url}}active{{ end }}" href="{{ .URL }}" href="{{ .URL }}">{{ .Title }}</a>
+
+{{ end }}
 
 {{ end }}
 
