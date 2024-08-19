@@ -40,6 +40,8 @@
       </div>
       <div class="space"></div>
 
+      <a href="{{ .Site.BaseURL }}">Home</a>
+
       {{ range .Site.Menus.main }}
 
       {{ $menu_item_url := .URL | relLangURL }}
