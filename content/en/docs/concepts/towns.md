@@ -2,7 +2,7 @@
 title: "Towns & addresses"
 description: "What are towns? How do I get one? and Why do this stuff in the first place?"
 menus:
-  2concepts:
+  3concepts:
     weight: 2
 ---
 

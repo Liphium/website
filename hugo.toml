@@ -1,6 +1,8 @@
 baseURL = 'https://liphium.com/'
 languageCode = 'en-us'
 title = 'Liphium'
+markup.highlight.noClasses = false
+
 [menu]
 # The main menu
 [[menu.main]]
