@@ -2,7 +2,7 @@
 title: "Frequently asked questions"
 description: "What you guys frequently ask us, the solution to your problem might be here!"
 menus:
-  1general:
+  2general:
     weight: 2
 ---
 

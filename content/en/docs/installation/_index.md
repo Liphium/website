@@ -1,8 +1,8 @@
 ---
-title: "General"
+title: "Installation"
 description: "If you find this, idk, hi!"
 menus:
-  2general:
+  1installation:
     weight: 1
     params:
       heading: true

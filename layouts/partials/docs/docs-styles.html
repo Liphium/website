@@ -13,6 +13,7 @@
             flex-direction: column;
 
             .heading {
+                font-size: 100%;
                 margin-top: 1em;
                 margin-bottom: 0.5em;
             }
@@ -22,7 +23,8 @@
             }
 
             a {
-                color: var(--text);
+                font-size: 90%;
+                color: var(--middle-text);
                 margin-bottom: 0.4em;
                 text-decoration: none;
 
@@ -68,11 +70,30 @@
                 margin-top: 1.8em;
             }
 
+            strong {
+                color: var(--text);
+            }
+
             code {
+                margin: 0;
+                overflow-x: scroll;
+                color: var(--text);
+                font-family: 'Courier New', Courier, monospace;
+                padding: 0.2em;
+                border-radius: 5px;
+                line-height: 1.5;
                 background-color: var(--background2);
-                padding: 0.4em;
-                border-radius: 0.4em;
-                font-family: monospace;
+            }
+
+            ul {
+                margin-top: 0em;
+                padding-top: 0em;
+                padding-right: 1.5em;
+                padding-left: 1.5em;
+
+                li {
+                    color: var(--middle-text);
+                }
             }
 
             a {
@@ -186,6 +207,8 @@
             padding: 0 !important;
         }
     }
+
+
 </style>
 
 <script lang="js">
