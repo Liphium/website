@@ -1,8 +1,8 @@
 ---
-title: "General"
+title: "Setting up a town"
 description: "If you find this, idk, hi!"
 menus:
-  3general:
+  2towninstall:
     weight: 1
     params:
       heading: true
