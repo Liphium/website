@@ -54,7 +54,7 @@ Connect to your PostgreSQL server and let's create a few databases. We're going 
 | A    | chat   | YOUR_IP_HERE | The domain of your chat server                               |
 | A    | spaces | YOUR_IP_HERE | The domain of your Spaces server                             |
 
-**4.** Now let's create an environment file for your Liphium town. Luckily for you, I already prepared [a GitHub Gist]() as a template. Please download it and then follow the next steps that walk you through of how to change it up for your town.
+**4.** Now let's create an environment file for your Liphium town. Luckily for you, I already prepared [a GitHub Gist](https://gist.github.com/Unbreathable/0469cfd271b84340429c140dde830642) as a template. Please download it and then follow the next steps that walk you through of how to change it up for your town.
 
 **5.** First, let's tackle the domains. You already created subdomains on your domain for each of the servers that Liphium exposes. So please enter the full domain of your first A record right into `BASE_PATH`, followed by the second into `CHAT_NODE` and the third into `SPACE_NODE`. Just like I did it in my template for the domains above. **Please do not add https:// or http:// to your domain**. This is a common issue that breaks functionality of Liphium.
 
