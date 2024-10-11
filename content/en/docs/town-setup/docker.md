@@ -8,8 +8,6 @@ menus:
 
 So you want to make your own town, eh? Well **if you've never touched a server you probably shouldn't attempt this** as servers (especially with Linux) are not a newbie-friendly environment. But with that out of the way or if you're seeking a challenge, let's get a fresh new town onto your server!
 
-**WARNING: This guide is not yet complete and may contain errors or mistakes. If you run into anything that doesn't work or have questions, make sure to contact me at julian(at)liphium.com!**
-
 ### This guide is incomplete
 
 Because I'm kind of short on time right now, I've not been able to write a full guide on how to install all of Liphium _quite yet_. With this guide you'll get all of the chatting functionality Liphium offers, but **Spaces (audio and video calls) are missing** from this installation. Installing Spaces can be quite a chore, so we'll not get into it today. But I'll link all the nessecary resources to get you there at the end, so you _could_ attempt to install Liphium that way, but I **wouldn't recommend trying it**.
@@ -111,33 +109,9 @@ ln -s /etc/nginx/sites-available/liphium-chat /etc/nginx/sites-enabled/liphium-c
 
 ### Step 5: Getting into your town
 
-The stuff in this step will not have to be done after the next update as there were some oversights on my part that will be fixed in the next few releases, but until then you'll have to deal with the database unfortunately.
+When you now connect to your Liphium town for the first time with any client app, you can enter the `SYSTEM_UUID` environment variable as the invite. This is an invite created to make sure an account can be created.
 
-#### Creating an invite to sign up as the first user
-
-**1.** Log into your PostgreSQL database and connect to the `main` database and execute the query below.
-
-```
-INSERT INTO invites (id, creator, created_at) VALUES ('ad75213a-598f-4078-aaaf-03b315177ef8', 'ad75213a-598f-4078-aaaf-03b315177ef8', '2024-09-20 14:35:00')
-```
-
-**2.** Use `ad75213a-598f-4078-aaaf-03b315177ef8` as your invite when logging into Liphium.
-
-#### Adding more invites to your own account
-
-**1.** Connect to the `main` database and execute the query below to see all of the accounts (you need to register first before doing this).
-
-```
-SELECT * FROM accounts;
-```
-
-**2.** Look at the request of the query and copy your account id. After that, run the query below with the account id you copied.
-
-```
-INSERT INTO invite_counts (account, count) VALUES ('your-id', 100);
-```
-
-**3.** If you now go to Settings -> Invites in the app, you should see that you just received 100 invites. And with that I wish you a lot of fun on Liphium.
+If you just created the first account on your Liphium town, it will automatically have admin permissions. You can now go to Settings -> Invites -> Generate invite to invite other people to your town.
 
 ### We're finally done
 
