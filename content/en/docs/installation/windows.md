@@ -10,13 +10,23 @@ Installing Liphium can be hard and since I'm a poor soul I can't really help you
 
 ### Requirements
 
-Before you install Liphium, it's important to tell you what you need to actually use the app after the installation. If you don't have **an invite to a town** or didn't set up your own one yet, you will **not be able to use** Liphium.
+Before you install Liphium, it's important to tell you what you need to actually use the app after the installation. If you don't have **an invite to a town** or didn't [set up your own one yet](/docs/town-setup/docker), you will **not be able to use** Liphium.
 
 ### Installation of Liphium on Windows
 
 Well there are two ways to get Liphium installed on your system. The first way is to just download the zip archive from our GitHub repository and do a bunch of weird stuff with that, and the other option is to just use the PowerShell script I provide below to get it installed. Problem is both are kind of complicated. Choose the one you like more, I guess.
 
-#### Option 1: Manual installation
+#### Option 1: Install through the PowerShell script
+
+Because PowerShell doesn't allow you to run just any script you download off the internet (which is probably for the better) you may have to perform additional steps based on what errors that come up when when running the command below. You can also view the script [here](https://gist.github.com/Unbreathable/c476ee7c54b9356aaa214628d2a026e8) if you want to see what it's going to do. Now just open a new PowerShell session and run the command below. Make sure to not close anything and Liphium should just open after the download completed.
+
+```
+irm https://gist.githubusercontent.com/Unbreathable/c476ee7c54b9356aaa214628d2a026e8/raw/9ab6c929d31bc4a37f77b4dab2874d680830e837/install.ps1 | iex
+```
+
+Liphium will also ask you for Administrator priviledges because it needs to add a shortcut to a folder so you can actually search for it in the Windows Search.
+
+#### Option 2: Manual installation
 
 This will basically guide you through the entire process the script does for you, but it's also a little more straight forward, this will take like 5 minutes and a few clicks, so please don't leave: It's not that complicated, I promise.
 
@@ -25,16 +35,6 @@ This will basically guide you through the entire process the script does for you
 **Step 2**: Run the file in the folder called chat_interface.exe and if there is a Windows Defender popup, that's completely normal. I don't have the money to buy a certificate to get around this problem, so you'll have to believe me or [an anti-virus scanning site](https://virustotal.com) that the file you're about to run is just installing Liphium and not some weird other stuff.
 
 **Step 3**: The thing is also gonna ask you for Administrator because it needs to create a shortcut (not a desktop one), please accept that cause otherwise the app is not going to be installed. And with that, you're done. Have a nice time on Liphium. Oh and you can also now delete the zip file and the folder you extracted it to. There should be a shortcut in your applications folder, meaning you can run the app by typing "Liphium" into your search bar. Have fun!
-
-#### Option 2: Installation through a PowerShell script
-
-Because PowerShell doesn't allow you to run just any script you download off the internet (which is probably for the better) you're going to have to paste the script I provide below into your editor and just run it like that because there is just no other way. So let's get into it.
-
-**Step 1**: Create a new file called `install.ps1` literally anywhere on your computer and paste the code from this [GitHub Gist I created](https://gist.github.com/Unbreathable/c476ee7c54b9356aaa214628d2a026e8) into there.
-
-**Step 2**: Open Terminal (in Windows 11) or PowerShell (in Windows 10 + 11) and use the following command to run the script: `.\install.ps1`. This might take some time as it's going to download the newest version, unzip it and then run it. It's going to ask for Administrator permissions as it's going to add a shortcut to your start menu so you don't have to do anything weird to start the app.
-
-**Step 3**: The app should now open itself and you should be ready to go by entering all the stuff you need for Liphium like your [town's address](/docs/concepts/towns) and more stuff like that.
 
 ### Uninstalling Liphium on Windows
 
