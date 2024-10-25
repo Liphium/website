@@ -66,9 +66,9 @@ body {
 }
 
 .header-link {
-  display: flex; 
+  display: flex;
   flex-direction: row;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
 }
 
@@ -77,7 +77,8 @@ body {
   text-decoration: none !important;
 }
 
-span, img {
+span,
+img {
   user-select: none;
 }
 
@@ -176,7 +177,8 @@ span, img {
       margin: 0;
     }
 
-    .logo, img {
+    .logo,
+    img {
       width: 1.8em;
       height: 1.8em;
     }
