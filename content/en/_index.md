@@ -1,6 +1,6 @@
 ---
 title: "Liphium"
-description: "The chat experience you love, encrypted by default."
+description: "The chat experience you love, encrypted by default. Liphium is the home for all of your messaging, card game and file sharing needs."
 hero:
   title: "The chat experience you love, encrypted by default."
   description: "Liphium is a novel approach to the design of an end-to-end encrypted chat app. It lets you keep all of the things you love from regular social platforms, all in one central place. With a lot of cherries on top of the cake."
