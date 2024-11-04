@@ -257,6 +257,7 @@ footer {
 
 .hero {
   font-size: 300%;
+  text-align: center;
   text-decoration: underline dashed var(--accent);
 }
 

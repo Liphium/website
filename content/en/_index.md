@@ -1,16 +1,16 @@
 ---
 title: "Liphium"
-description: "A chat app with more fun (hopefully)."
+description: "The chat experience you love, encrypted by default."
 hero:
-  title: "A chat app with more fun."
-  description: "Chat apps didn't change much in the last few years. Liphium is a novel approach to the design and feature set of a chat app. The app has so many unique features and twists, I think you'll love it."
+  title: "The chat experience you love, encrypted by default."
+  description: "Liphium is a novel approach to the design of an end-to-end encrypted chat app. It lets you keep all of the things you love from regular social platforms, all in one central place. With a lot of cherries on top of the cake."
 features:
   - heading: Never worry about that silly big file again
     icon: electric_bolt
     description: With Zap you can share files up to any size with your friends. It's like AirDrop or QuickShare, but over the internet at the same speed as your internet connection. And you don't have to be in the same room.
-  - heading: High quality audio
-    icon: equalizer
-    description: When you're in a call, the most important thing is audio quality. For that reason, Liphium has many audio features such as Microphone sensitivity that many other apps lack to make sure no-one hears your keyboard noise.
+  - heading: We have all the features you are missing
+    icon: manage_search
+    description: We know changing the home for all of your messages is difficult. And we don't want you to regret it, so all of the things you expect like a Status system are there. Audio and video calls are still being worked on.
   - heading: The best online card game experience
     icon: table_restaurant
     description: Within our calls or Spaces, as we call them, you can play basically any card game by using Tabletop, our infinite canvas. Even more is coming soon!
