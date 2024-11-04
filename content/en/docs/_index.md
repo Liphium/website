@@ -3,32 +3,20 @@ title: "Documentation & guides"
 description: "The place where you can learn about the Liphium app and server."
 ---
 
-It's hard to write an introduction page for your documentation, so I'll just explain what Liphium is here. If you already know that, go somewhere else or something. You can go talk to the support too if you have any problems, but please only do that if you didn't find your problem here. On the other hand, the people who just open random tickets wouldn't read this anyway.
+Welcome to the Liphium documentation. The place where you can find answers to all of your questions about Liphium. We even talk about the architecture of the app in some places, so if you're curious, dig through some of this to get to know Liphium even better. 
 
-## Liphium is still in it's alpha phase
+### Liphium is still in Open Beta
 
-If you are looking for a download button anywhere on the page, I'm sorry. Liphium is not available yet and that's why there is almost no documentation on how to set up a server. Key components are still missing for a full release and we would rather have you waiting than using the app right now. You can still check out what's on this page, if you are interested in what Liphium will be (once released).
+While Liphium is already sort of available to the public, it's not yet available through official stores like the Google Play Store, the App Store or stores like Flathub on Linux. We ask that you don't judge us for breaking changes or bugs that might happen for this period. Liphium is currently changing quite fast and stuff like the [recent removal of audio and video calls](https://github.com/Liphium/chat_interface/blob/main/CHANGELOG.md) is normal and should be expected.
 
-## Okay, so what is Liphium?
+### Installation of the app
 
-Man, we're already starting with one of the hardest questions. Fine. Liphium itself is the decentralized chat app, the one you just heard about when clicking on the main page. It can send messages, images, files and all kinds of other stuff. All in an end-to-end encrypted fashion. You can also do calls and all kinds of other stuff you would expect from a modern messenger. Since you probably want to know what the app can do in specific down to at least some detail, I made a list of all the features we currently have (more to come in the future):
+Liphium is currently on available on Windows by installing it [through a script](/docs/installation/windows). You can check out instructions here. A mobile release for Android is planned by the end of November 2024. The app will be made available on more platforms throughout 2025.
 
-### Friends or contacts
+### Setup of a town (a Liphium instance)
 
-Liphium is all about you and your friends. Similar to other platforms that don't require a phone number, all Liphium accounts have usernames. Those **usernames** can be used to add people as friends on your local instance (the server you signed up for). To add people on other instances, you can generate a **friend code**. When the other user than types in your server together with your friends code, they can add you even across instances. This is what makes Liphium decentralized.
+Setting up a Liphium town can be quite difficult. That's why we have a full guide on how to set one up using the [official Docker image](https://hub.docker.com/r/liphium/chat). You get a complete deployment together with HTTPS using Nginx and Certbot. It's not something for beginners though. 
 
-### Messaging (the most obvious one)
+### A map of what's ahead
 
-When you have friends added, you can start a conversation with them and start chatting away. One thing to know is that your messages are **end-to-end encrypted**. Sadly, there is currently no way to react to messages with emojis (but that's on the roadmap). Everything else most likely exists. We have **replies**, **formatting directives**, **emojis**, **file uploads** and so much other stuff (I probably even forgot things here).
-
-### File streaming (knows as Zap)
-
-Send files of any size to anyone on your instance. Yes you heard that right. With Zap, you can easily send **files of any size** to one of your friends. It is currently only available in one-to-one conversations, only one transaction is allowed at a time and it's also currently not as fast as your internet connection would allow it to be. But I'm on the other hand always working to improve Zap, in fact, in the last update it [just got 2x faster](https://github.com/Liphium/chat_interface/releases/v0.1.3). I'm also looking to expand the support for Zap to group conversations as well, but how we will implement that is still in the stars. The feature is available by clicking the lightning bolt in any direct message on Liphium.
-
-### Video and audio calls (we called them Spaces)
-
-When you want to chill with your buddies online, you will need video and audio calling, which we call Spaces. So, the immediate question might be why we renamed such a standard feature. And that question has a good answer. Spaces in Liphium aren't calls, because they are not limited to the group you are calling. You can invite anyone on the platform using **Space Sharing** through our status system. In Spaces, you can **talk**, turn on your **camera** and **share your screen** (currently limited to a couple of platforms) just like normal. For audio, we have additional settings like **microphone sensitivity** to make sure you don't hear everyone's background noise.
-
-### Tabletop & decks
-
-As we mention on our landing page, Liphium has really good support for your card game playing needs. In every Space you can click the **table icon** to switch into Tabletop mode. In there, you can place **decks** you have created in the settings onto the table. These act like card decks from which you can draw cards into **your inventory** or just onto the table itself. The table is also rotatable meaning you can play as if you were sitting around an actual table. This feature is still not perfect and there are many rough edges, but it'll get there in the future. If you have any suggestions, please let us know!
+You can also simply view what we're planning on rolling out for future releases [over here](/docs/general/roadmap). We're always very transparent about what's coming for the future of Liphium. If you're curious, just check it out. If you want to suggest something for the future, you can create an issue over on GitHub.
