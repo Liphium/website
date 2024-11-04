@@ -5,7 +5,7 @@ author: "Liphium team"
 date: "2024-04-24T11:12:29+02:00"
 ---
 
-**Effective: 24.04.2024, last updated: 24.04.2024**
+**Effective: 04.11.2024, last updated: 04.11.2024**
 
 We take your privacy and security seriously. On that note, this site doesn't collect a whole lot of data so that isn't too complicated. In this Privacy Policy we inform you how we process, potentially store and work with your information on our website, app and other services we may provide to you.
 
@@ -60,4 +60,4 @@ We do not sell, trade, or otherwise transfer your personally identifiable inform
 
 ## Contact
 
-If you have any questions about how we use your information on our Services you can always reach out. Refer to our [Impressum](/impressum) for that. It has all the information you need to get in contact with us. But please use the email we mention in there. We might not otherwise respond to your requests.
+If you have any legal questions about how our Services use your information or have any other issues with this agreement or other legal requests, please reach out to us at [legal(at)liphium.com](mailto:legal@liphium.com). We don't bite, so just contact us if there's anything on your mind.
