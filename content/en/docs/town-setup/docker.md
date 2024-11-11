@@ -8,9 +8,7 @@ menus:
 
 So you want to make your own town, eh? Well **if you've never touched a server you probably shouldn't attempt this** as servers (especially with Linux) are not a newbie-friendly environment. But with that out of the way or if you're seeking a challenge, let's get a fresh new town onto your server!
 
-### This guide is incomplete
-
-Because I'm kind of short on time right now, I've not been able to write a full guide on how to install all of Liphium _quite yet_. With this guide you'll get all of the chatting functionality Liphium offers, but **Spaces (audio and video calls) are missing** from this installation. Installing Spaces can be quite a chore, so we'll not get into it today. But I'll link all the nessecary resources to get you there at the end, so you _could_ attempt to install Liphium that way, but I **wouldn't recommend trying it**.
+Also before we get started, you can always message me on Discord if you have any kind of problem with the installation or have some kind of other question. You can get to the Liphium Discord server through the invite in the navigation bar or menu at the top of the page.
 
 ### Requirements
 
@@ -25,7 +23,7 @@ Please make sure you have everything you need installed before installing Liphiu
 
 ### Tools we will use
 
-Alright, one more thing before we get started on the installation. I just want you to know what we are going to use so everything is clear. I'll have instructions on how to install some of the tools below later in the instructions.
+Alright, one more thing before we get started on the installation. I just want you to know what we are going to use so everything is clear. I'll have instructions on how to install Nginx and Certbot later. Although I just link you to their websites, respectively.
 
 - **Nginx**: Nginx is a reverse proxy for web requests that we'll use to expose your Liphium town to the outside world. We use it here because we're gonna create multiple domains pointing to the your server and it wouldn't be possible without nginx. We also need it to install SSL certificates for your domain so you can use the app properly.
 - **PostgreSQL**: The database we're going to use for Liphium. All of your data is stored in here.
@@ -52,7 +50,7 @@ Connect to your PostgreSQL server and let's create a few databases. We're going 
 | A    | chat   | YOUR_IP_HERE | The domain of your chat server                               |
 | A    | spaces | YOUR_IP_HERE | The domain of your Spaces server                             |
 
-**4.** Now let's create an environment file for your Liphium town. Luckily for you, I already prepared [a GitHub Gist](https://gist.github.com/Unbreathable/0469cfd271b84340429c140dde830642) as a template. Please download it and then follow the next steps that walk you through of how to change it up for your town.
+**4.** Now let's create an environment file for your Liphium town. Luckily for you, I already prepared [a GitHub Gist](https://gist.github.com/Unbreathable/5123cede38cc43ca48af5f87960ce717) as a template. Please download it and then follow the next steps that walk you through of how to change it up for your town.
 
 **5.** First, let's tackle the domains. You already created subdomains on your domain for each of the servers that Liphium exposes. So please enter the full domain of your first A record right into `BASE_PATH`, followed by the second into `CHAT_NODE` and the third into `SPACE_NODE`. Just like I did it in my template for the domains above. **Please do not add https:// or http:// to your domain**. This is a common issue that breaks functionality of Liphium.
 
@@ -62,7 +60,7 @@ Connect to your PostgreSQL server and let's create a few databases. We're going 
 
 **8.** Fourth, let's get your email server connected. Just enter the details into the environment variables. You can do that right?
 
-**9.** Next is actually running the app to get some more values out of it. So first, create a `files` folder in your current directory. This is where all the files uploaded to Liphium will be stored.
+**9.** Next is actually running the app to get some more values out of it. So first, create a `files` folder in your current directory. This is where all the files uploaded to Liphium will be stored. You can also optionally have them be uploaded to Cloudflare R2 or similar solutions, but that's currently a little experimental. If you want to use S3 or R2 for file storage, send me a message on Discord (the invite is in the nav bar).
 
 **10.** Now run the docker container by using the command below. Make sure to replace `config.env` with the name of your environment file.
 
@@ -86,7 +84,7 @@ apt install nginx
 
 **2.** After installing Nginx, we're going to need to set up a few sites. There should already be a directory called `/etc/nginx/sites-available`, but if it is not there, just create it. Enter this directory.
 
-**3.** Now you're going to need two configs again. As usual, just download them from [here](https://gist.github.com/Unbreathable/0469cfd271b84340429c140dde830642). This time it's two files though. Make sure you grab both and put them into the `/etc/nginx/sites-available` folder.
+**3.** Now you're going to need two configs again. As usual, just download them from [here](https://gist.github.com/Unbreathable/0469cfd271b84340429c140dde830642). This time it's three files though. Make sure you grab all of them and put them into the `/etc/nginx/sites-available` folder.
 
 **4.** Change the domains in the configurations (behind `server_name`) you just downloaded from me to reflect your domain setup (for example: main.liphium.com -> main.example.com). Make sure to not forget the semicolon at the end!
 
@@ -95,15 +93,18 @@ apt install nginx
 ```
 ln -s /etc/nginx/sites-available/liphium-main /etc/nginx/sites-enabled/liphium-main
 ln -s /etc/nginx/sites-available/liphium-chat /etc/nginx/sites-enabled/liphium-chat
+ln -s /etc/nginx/sites-available/liphium-spaces /etc/nginx/sites-enabled/liphium-spaces
 ```
 
 **6.** Run `nginx -t` to validate that the configurations work properly. If they don't, do what the command tells you to fix the configurations up bit by bit.
+
+**7.** You can now restart Nginx by typing `systemctl restart nginx`. You should now have the configurations loaded.
 
 ### Step 4: Adding SSL certificates to your town using Certbot
 
 **1.** For Certbot to work, there are actually two things you need to install. You can follow [this guide](https://certbot.eff.org/instructions?ws=nginx&os=snap) from the official website. **Please follow their guide until step 5**.
 
-**2.** To secure your town, we first need to make sure your domains are already updated and already redirect to the correct server. To verify if they are already set up correctly, go to `main.yourdomain.com` (or whatever you used) and check if there is some sort of error from nginx. If it's not there yet, you'll have to wait a little bit before getting your certificates. This can take up to 48 hours in some cases.
+**2.** To secure your town, we first need to make sure your domains are already updated and already redirect to the correct server. To verify if they are already set up correctly, go to `main.yourdomain.com` (or whatever you used) and check if there is some sort of error from nginx. If it's not there yet, you'll have to wait a little bit before getting your certificates. This is because your domain isn't pointing to the server yet. This can take up to 48 hours to happen in some cases. So if this happened to you just be patient for now, I know this sucks, but it can happen.
 
 **3.** When you did see the error from nginx, you can now just run `certbot --nginx` to apply the certificates. The CLI will ask your for a few things. For example, they'll ask you to enter your email address. Please do, so you are always notified if something is wrong with your certificates. When they finally ask which domains you want to secure, just leave the field blank to select all of them. Certbot will then do its magic and you are officially done with the setup.
 
