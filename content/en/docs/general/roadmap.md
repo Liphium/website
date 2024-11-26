@@ -14,32 +14,31 @@ Liphium has grown quite a lot in 2024. Throughout June and July decentralization
 
 ### Project Lightwire
 
-Because audio and video calls have been removed and all of the code has been deleted from the codebase, we are planning to reintroduce this functionality throughout 2025. The goal of Project Lightwire is building a audio and video streaming technology on top of RDP to serve the needs of all ideas we want to implement in the future. This doesn't just stop at audio and video calls. You can read more about those ideas in the 2025 section of this page.
+Because audio and video calls have been removed and all of the code has been deleted from the codebase, we are planning to reintroduce this functionality throughout 2025. The goal of Project Lightwire is building UDP streaming technology to serve the needs of all the ideas we want to implement in the future. This doesn't just stop at audio and video calls, because there's (as usual) a lot of way too big things that I'm currently thinking about. You can read more about those ideas in the 2025 section of this page.
 
-### Goals for November
+### A look back at November
 
-This November is all about making Liphium simpler and trying to port it to more platforms. Web support has already been achieved in October and this month is all about porting Liphium to Android and making sure it works properly there. Here's a more general list.
-
-- Release a first Beta version of the Liphium mobile app on Android
-- Add chatting functionality to Spaces to make Tabletop a little bit more usable
-- Prepare Spacestation (the backend for all things Spaces) for more advanced features
-- Get rid of unused code and improve startup performance
-- Make Zap run at full internet speed
-
+While I didn't manage to get out a Beta of the Android version of the app this month, I still feel like significant progress was made towards that goal. The app now runs decently on Android, with a few more quirks that we need to get rid of. For example, when rotating your phone by 90 degrees into a wide-screen format. But as for all of the other goals, most of them have been released with the recent [0.5.0 update](https://github.com/Liphium/chat_interface/releases/tag/v0.5.0). The rewrite of the internals for faster startup is also complete, but that will be released together with bigger features later in December.
 
 ### Goals for December
 
-I'll admit that it's a little early to start talking about December, but here's a general idea for what's coming then.
+Well December being the last and final month and now almost around the corner, I can now finally talk about what I'll be working on. The focus is making Liphium a usable app and also to push out some changes that were made in November but didn't make it into the release in November. Most notably, the rewrite of the internal startup architecture that can boost startup performance by 2x (I got rid of a lot of unnessecary endpoints and also merged some resulting in less calls to the server).
 
-- A new feature that I won't say anything about here yet, as it's not certain
-- Lots of bug and performance fixes
-- Start with really basic implementation and experimenting to prepare for Project Lightwire
-- Porting of Liphium to Linux (but that's not fully certain yet)
+- Get all messages synchronized into the local database
+- Add message search to finally make conversations sort of usable
+- Get a basic demo of Lightwire up and running (I'm attending a Hackathon later this month where I'll be working on it)
+
+And now for some things that would be cool, but will most likely be pushed into January.
+
+- That one feature that I talked about here before
+- The release of a Beta version of Liphium for Android
+- A proper release in the Microsoft Store / Making the installation of Liphium more user-friendly
+- Addition of a Downloads page here on the website
 
 
 ## 2025
 
-In 2025, I want to evolve Liphium beyond what it currently is. It shouldn't just be about chatting anymore. I want it to be a place for events and make sure our audio and video features support this vision. One priority is making it really simple to set up a Liphium server and trying to make it even easier. Project Lightwire will be a major part of that and while streaming audio will be **much** easier than video, both are planned and will hopefully be supported at the end of 2025.
+In 2025, I want to evolve Liphium beyond what it currently is. It shouldn't just be about chatting anymore. I want it to be a place for events and make sure our audio and video features support this vision. One priority is making it really simple to set up a Liphium server and trying to make it even easier. Project Lightwire will be a major part of that and while streaming audio will be **much** easier than video, both are planned and will hopefully be supported at the end of 2025. To add a little bit more to the already massive challenge, I also want to be able to stream video and audio files using Lightwire. But that's the most distant dream as of now, we'll see how it goes though!
 
 ### Our collaboration with Vultris
 
