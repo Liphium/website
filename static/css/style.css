@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: 'Jersey10';
-  src: url("/Jersey10.ttf") format("truetype");
+  font-family: 'Pixel';
+  src: url("/Pixel.ttf") format("truetype");
 }
 
 /* LAYOUT */
@@ -17,7 +17,8 @@
 }
 
 .pixel {
-  font-family: "Jersey10", monospace !important;
+  font-weight: 800;
+  font-family: "Pixel", monospace !important;
 }
 
 :root {
@@ -70,6 +71,17 @@ body {
   gap: 0.25em;
   flex-direction: row;
   align-items: center;
+}
+
+.hero-small {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Pixel", monospace;
+  background: linear-gradient(to right, var(--accent), var(--text));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
 .header-link {

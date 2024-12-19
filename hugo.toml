@@ -10,7 +10,7 @@ name = "GitHub"
 url = "https://github.com/Liphium"
 weight = 2
 [[menu.main]]
-name = "Documentation"
+name = "Help & resources"
 url = "/docs/"
 weight = 3
 #[[menu.main]]
