@@ -1,9 +1,6 @@
 ---
 title: "Windows"
 description: "How you install Liphium on Windows, it can be complicated, for that reason we have this guide."
-menus:
-  1installation:
-    weight: 2
 ---
 
 Installing Liphium can be hard and since I'm a poor soul I can't really help you out by doing fancy things like signing the thing cause that would be way too expensive. And since the Microsoft store recently started requiring me to leak my address and phone number for a "customer support contact" I'm like: Well, that's not happening either. Even though I had everything ready. Well we're here now, and I'm gonna need a little bit of your trust to make this work and I'm also a little sorry that there is currently no better way of doing this. **Below all the installation instructions there is also a guide on how to uninstall Liphium** since that may be something you are looking for as well.
