@@ -5,10 +5,19 @@
   src: url('/Inter.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Jersey10';
+  src: url("/Jersey10.ttf") format("truetype");
+}
+
 /* LAYOUT */
 
 * {
   font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.pixel {
+  font-family: "Jersey10", monospace !important;
 }
 
 :root {
@@ -22,6 +31,8 @@
   --primary: #084a61;
   --secondary: #2b5152;
   --accent: #4ed6f1;
+  --gradient-2: #4e6ff1;
+  --gradient-shadow: #762adacf;
   --accent-shadow: #7aa0d142;
 }
 
@@ -53,10 +64,6 @@ body {
   flex-direction: column;
 }
 
-.hero-logo {
-  width: 8rem;
-}
-
 .header-flex {
   display: flex;
   flex-wrap: wrap;
@@ -84,11 +91,6 @@ img {
 
 .full-height {
   height: 90vh;
-}
-
-.hero-text {
-  text-align: center;
-  padding: 0rem 10rem;
 }
 
 .sec-text {
@@ -248,33 +250,6 @@ footer {
   }
 }
 
-/* HEADERS */
-
-.hero-small {
-  font-size: 200%;
-  text-decoration: underline dashed var(--accent);
-}
-
-.hero {
-  font-size: 300%;
-  text-align: center;
-  text-decoration: underline dashed var(--accent);
-}
-
 .spacer {
   height: 5em;
-}
-
-@media screen and (max-width: 900px) {
-  .hero {
-    text-align: center;
-    font-size: 200%;
-    width: calc(100% - 1em);
-    padding: 0em 0.5em;
-  }
-
-  .hero-text {
-    width: calc(100% - 2em);
-    padding: 0em 1em;
-  }
 }
