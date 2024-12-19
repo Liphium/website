@@ -7,7 +7,7 @@ Welcome to Liphium's help and resources page. You are one of the few people that
 
 ### Are you trying to set up a town/server?
 
-We are currently in the process of splitting all of the documentation into two different pages. One for developers & town administrators and one for general users to make the guides better for everyone. Because of that, we're sorry if there are articles missing in the current version of the documentation and hope that the split is gonna help make the documentation better.
+If you're trying to set up a town, we have [separate documentation](https://docs.liphium.com) to cover everything related to town setup and how to maintain a town. You can also learn more about all the settings and stuff. If you have a town or are an administrator in one, be sure to check it out to get to know it just a bit better.
 
 ### Liphium is still in its alpha
 
@@ -15,7 +15,7 @@ While Liphium is already sort of available to the public, it's not yet available
 
 ### Installation of the app
 
-Liphium is currently on available on Windows by installing it [through a script](/docs/installation/windows). You can check out instructions here. A mobile release for Android is planned by the end of November 2024. The app will be made available on more platforms throughout 2025.
+Liphium is currently on available on Windows by installing it [through a script](/docs/installation/windows). You can check out instructions here. We're planning to make the app more widely available throughout 2025.
 
 ### Setup of a town (a Liphium instance)
 
