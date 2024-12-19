@@ -1,9 +1,12 @@
 {{ partial "header.html" . }}
 
 <div class="main">
-    <div class="center column full-height">
-        <img class="hero-logo" src="/logo.png">
-        <h1 class="hero">{{ .Params.hero.title }}</h1>
+    <div class="hero-box">
+        <div class="hero-title-box">
+            <img class="hero-logo" src="/logo.png">
+            <h1 class="hero-title pixel">{{ .Params.hero.title }}<span class="hero-title hero-gradient pixel">{{
+                    .Params.hero.title2 }}</span>{{ .Params.hero.title3 }}</h1>
+        </div>
         <p class="hero-text sec-text">
             {{ .Params.hero.description }}
         </p>
@@ -15,7 +18,7 @@
             {{ range .Params.features }}
             <div class="desc">
                 <span class="material-symbols">{{ .icon }}</span>
-                <h2>{{ .heading }}</h2>
+                <h2 class="pixel">{{ .heading }}</h2>
                 <p class="sec-text">
                     {{ .description }}
                 </p>
@@ -28,6 +31,43 @@
 </div>
 
 <style>
+    .hero-title {
+        font-size: 50px;
+        line-height: 1.1;
+    }
+
+    .hero-title-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .hero-logo {
+        width: 6em;
+        height: 6em;
+    }
+
+    .hero-text {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .hero-box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+        gap: 0em;
+    }
+
+    .hero-gradient {
+        background: linear-gradient(to right, var(--accent), var(--gradient-2));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0px 0px 30px var(--gradient-shadow);
+    }
+
     .features .row {
         margin-top: 5em;
         display: grid;
@@ -36,7 +76,12 @@
         gap: var(--section-spacing);
         transition: transform 0.5s ease;
         gap: 5em;
-        padding: 0 2em;
+        padding: 0;
+
+        h2 {
+            font-size: 37px;
+            line-height: 1.1;
+        }
 
         span {
             font-size: 50px;
@@ -56,12 +101,49 @@
         }
     }
 
+    @media screen and (max-width: 700px) {
+        .hero-box {
+            padding: 0 0.5em !important;
+        }
+    }
+
     @media screen and (max-width: 900px) {
 
         .features .row {
             padding: 0 0.5em !important;
             display: flex;
             flex-direction: column;
+            gap: 2.5em;
+
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+        .hero-title {
+            font-size: 40px;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .hero-title-box {
+            flex-direction: column;
+            gap: 0.7em;
+        }
+
+        .hero-title {
+            padding: 0 0em;
+            text-align: center;
+
+            span {
+                padding: 0;
+            }
+        }
+
+        .hero-box {
+            display: flex;
+            padding: 0 4em;
         }
     }
 
