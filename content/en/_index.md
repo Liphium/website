@@ -15,7 +15,7 @@ features:
     description: Liphium's Library allow you to save memes, images, GIFs and (in the future) even audio into one central place. No more meme folders, you can access everything right in the app from all of your devices. Let's make memes great again!
   - heading: Next level file sharing with Zap
     icon: electric_bolt
-    description: Have a that really large file you want to send someone and can't upload to a cloud provider? Zap can transfer files directly to the receiver at the speed of your internet connection. And that works with any file of any size.
+    description: Have that really large file you want to send someone and that you can't upload to a cloud provider? Zap can transfer files directly to the receiver at the speed of your internet connection. And that works with any file of any size.
   - heading: Share any port on your system
     icon: cyclone
     description: Want to play Minecraft with your friends and don't have a server? With Warp directly integrated into Liphium you can share the port with the click of a button. And all your friends will be able to directly join the fun.
