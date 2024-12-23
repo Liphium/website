@@ -5,7 +5,7 @@ hero:
   title: "Decentralized chatting & sharing for "
   title2: "everyone"
   title3: "."
-  description: "Liphium is an open-source decentralized messaging app where you can communicate with anyone without connecting to a central managed server. We give you this power while not compromising on features and safety while even having things no other messenger can do."
+  description: "Liphium is an open-source decentralized messaging app where you can communicate with anyone without connecting to a central managed server. We give you this power while not compromising on features and safety and even having things no other messenger can do."
 features:
   - heading: Completely decentralized
     icon: public
@@ -24,5 +24,5 @@ features:
     description: Playing and testing your own card games has been way too hard for way too long. Liphium has an integrated table that allows you to play just like on a real table with your friends. And yes, that includes anyone on Liphium.
   - heading: Privacy without limitations
     icon: lock
-    description: We use industry standard end-to-end encryption algorithms and libraries to ensure that all of your data is safe. Yes, that includes your messages, friend requests, files and everything you upload to the platform. 
+    description: We use industry standard end-to-end encryption algorithms and libraries to ensure that all of your data is safe. This doesn't just cover messages, but also friend requests, files and everything you upload to the platform. 
 ---
