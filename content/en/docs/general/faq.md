@@ -18,14 +18,4 @@ I mostly just thought about chat apps really hard because I don't really use soc
 
 ### What is Liphium?
 
-Come on, if that's your question, just go to the main page or click on "Documentation" again in the navbar above the title of this documentation entry. I don't want to paste that gigantic thing into here again. You can just look at it there.
-
-### Why do I need a domain for my town?
-
-Alright, there are two reasons for this, let me explain.
-
-First, if you don't have a domain, the server address of your [town](/docs/concepts/towns) will be in all of the addresses of all of the people in your town. This would mean that if the address of the server ever changes (like if you want to move to a more powerful machine) everyone would lose their connections to people outside of your town. It would break everything in decentralization. The Liphium server is also designed in a way where it never expects to have the address of it change. Meaning if you don't have a domain and want to change the address of your server, you'll go through a lot of complaints from the **people in your town losing connections to friends in other towns**. And **you'd have to delete all of the accounts** as the server can't change the address of the friends you've saved in your vault. Would be kinda bad wouldn't it?
-
-Second, by default Liphium blocks all towns that are using an insecure protocol. And because you can't have HTTPS when you just use a plain IP address you will never be able to connect to any towns running on the default configuration (which is basically all of them) because there are major security implications if you were to actually use a town without HTTPS in production.
-
-I hope you understood the reasoning for this requirement and make the right choice. I will not help you with any of this stuff and if any request of this issue ever reaches me, I will ignore it. But if you have a good, secure and reasonable idea of how to solve this problem for everyone without huge migrations and want to implement all of it yourself, [feel free to file a pull request](https://github.com/Liphium/station) as Liphium is open source.
+Liphium is a chatting and sharing platforms that caters towards people that want a digital place for all of their friends. A place where you can play, share files easily and have fun together while also giving you the essential features for basic communication. One thing that makes Liphium unique is that you can literally communicate with everyone that has an account on any server. Just like Email, you can add them as a friend by asking them for their [address](/docs/concepts/towns) and Liphium will figure everything else out. After they've accepted your request you can use all features of the app with them without limitations. With all of these capabilities there is never one central authority (like one big company) that can control your access to Liphium or just delete your account.
