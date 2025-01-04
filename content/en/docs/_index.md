@@ -3,11 +3,11 @@ title: "Help & resources"
 description: "The place where you can learn about the Liphium app and how to use it."
 ---
 
+{{<hint>}}
+If you're trying to set up a town, we have a <a href="https://docs.liphium.com">separate documentation</a> to cover everything related to town setup and how to maintain a town. You can also learn more about all the settings and stuff. If you have a town or are an administrator in one, be sure to check it out to get to know it just a bit better.
+{{</hint>}}
+
 Welcome to Liphium's help and resources page. You are one of the few people that check out the help articles before reaching out, huh? Thanks, I wish everyone was like you.
-
-### Are you trying to set up a town/server?
-
-If you're trying to set up a town, we have [separate documentation](https://docs.liphium.com) to cover everything related to town setup and how to maintain a town. You can also learn more about all the settings and stuff. If you have a town or are an administrator in one, be sure to check it out to get to know it just a bit better.
 
 ### Liphium is still in its alpha
 
