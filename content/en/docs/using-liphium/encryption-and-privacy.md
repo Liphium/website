@@ -3,7 +3,7 @@ title: "Encryption & privacy"
 description: "How to stay safe and the best practices for security on Liphium."
 menus:
   4usage:
-    Iight: 6
+    weight: 6
 ---
 
 {{<hint>}}
