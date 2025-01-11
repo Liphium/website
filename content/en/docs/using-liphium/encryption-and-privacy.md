@@ -18,15 +18,15 @@ Before I start, a short summary of all the pitfalls the encryption on Liphium ha
 
 - A server that is involved in the communication pipeline could technically break Liphium's end-to-end encryption (like on any other end-to-end encrypted messenger) which is why you need to compare verification codes if you want to be 100% secure.
 
-- Your status and profile picture are encrypted using a key that never changes and is shared with everyone you send a friend request to. This means friends you remove can still decrypt your status and profile picture. You can learn more about this [here](./faq.md#what-does-it-mean-to-share-my-keys-with-someone).
+- Your status and profile picture are encrypted using a key that never changes and is shared with everyone you send a friend request to. This means friends you remove can still decrypt your status and profile picture. You can learn more about this [here](./faq#what-does-it-mean-to-share-my-keys-with-someone).
 
 - A conversation on Liphium only has one key meaning all previous members of a conversation can technically decrypt all of the new messages being sent in it. Any new members can also read the entire chat history of a conversation.
 
 - If you create your account on a malicious server no encryption in this world will be able to protect the server from breaking some protections Liphium has in place. They will never be able to actually decrypt your data though. They could find out which accounts you are communicating with though.
 
-Please understand that Liphium is still in Beta and doesn't have features to prevent all of these issues just yet. I are committed to provide ways of fighting or completely preventing these issues by Liphium's full release. Development of apps takes a long time, and I hope you understand that.
+Please understand that Liphium is still in Beta and doesn't have features to prevent all of these issues just yet. I am committed to provide ways of fighting or completely preventing these issues by Liphium's full release. Development of apps takes a long time, and I hope you understand that.
 
-The only thing I truly cannot fix are points 1 and 4 as that's literally impossible (at least to my knowledge). If I find ways or you know how to fix them please open an issue or send us an email. I are always open to make Liphium even more secure.
+The only thing I truly cannot fix are points 1 and 4 as that's literally impossible (at least to my knowledge). If I find ways or you know how to fix them please open an issue or send us an email. I am always open to make Liphium even more secure.
 
 ### The goal
 
@@ -42,13 +42,13 @@ Every Liphium account has 2 key pairs: A signature and an encryption key pair. O
 
 - **Vault key**: Everything like friends, files and even your library will be encrypted using the vault key before being sent to the server. This key will also be sent to the server in encrypted form. Through this approach I make sure that the server can never know what friends you have and what kind of other things you might be storing there.
 
-- **Profile key**: The profile key is given to all friends you add to allow them to decrypt your profile picture and status. I use one key for everyone here because I want performance to stay the same no matter how many friends you have (issues with this are covered [here](./faq.md#what-does-it-mean-to-share-my-keys-with-someone)).
+- **Profile key**: The profile key is given to all friends you add to allow them to decrypt your profile picture and status. I use one key for everyone here because I want performance to stay the same no matter how many friends you have (issues with this are covered [here](./faq#what-does-it-mean-to-share-my-keys-with-someone)).
 
 - **Stored action key**: The stored action key is not actually an encryption key, but a token that is sent to friends to make sure they can always send you conversation invites as I limit the amount of unauthenticated conversation invites and friend requests (what I call stored actions) that can be sent to you to prevent the database becoming to big. For this reason, the server also knows your stored action key.
 
 ## Encryption of stored actions
 
-When I talk about **stored actions** what I are referring to is the system that handles conversation invites, friend removals and also friend requests. When you send a friend request to someone on Liphium, they receive a stored action. So that's what I'll be calling friend requests and so on from now on.
+When I talk about **stored actions** what I am referring to is the system that handles conversation invites, friend removals and also friend requests. When you send a friend request to someone on Liphium, they receive a stored action. So that's what I'll be calling friend requests and so on from now on.
 
 ### How the encryption works
 

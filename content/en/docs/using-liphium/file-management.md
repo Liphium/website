@@ -20,9 +20,9 @@ If you want to share an image, audio or small video file this is the way to do i
 
 Your storage usage is how much storage you are using in your town. When you hit the limit, you can no longer upload files and will have to delete files.
 
-**1.** Go to your settings by clicking the settings icon right in the bottom left on desktop or by clicking on the settings icon right in the bottom bar of the mobile app.
+**1.** Go to your settings by clicking {{< icon >}}settings{{< /icon >}} right in the bottom left on desktop or in the bottom bar of the mobile app.
 
-**2.** Click on the "Files" tab.
+**2.** Click on the "{{< icon >}}folder{{< /icon >}} Files" tab.
 
 **3.** Your storage usage will be displayed above all the files you uploaded to the server. It should say something like "You are currently using 100 MB out of 1 GB.". That's how much storage you are using.
 
