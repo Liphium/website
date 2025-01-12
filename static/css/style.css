@@ -84,6 +84,17 @@ body {
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
+.small-hero-box {
+  background-color: var(--background2);
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  margin-top: 0.6em;
+  gap: 3rem;
+  border-radius: 0.5rem;
+  border: var(--accent) 2px dashed;
+}
+
 .header-link {
   display: flex;
   flex-direction: row;
