@@ -17,10 +17,6 @@ While Liphium is already sort of available to the public, it's not yet available
 
 I'm sorry to say this, but there is currently no way to search the documentation straight on the page. If you want to search for something, you can use a search engine like DuckDuckGo and just add `site:liphium.com` to your query. This works basically the same way and is the reason why we've decided to not offer search here as a search engine is gonna do a much better job at this then we ever could. At the end of the day, it's also because I'm lazy of course.
 
-### Installation of the app
-
-Liphium is currently on available on Windows by installing it [through a script](/docs/installation/windows). We're planning to make the app more widely available throughout 2025. Liphium technically already works on Linux, I develop it mainly from macOS and Windows and have also been working on a mobile version for quite some time. So don't worry, we'll reach your preferred platform at some point.
-
 ### A map of what's ahead
 
 You can also simply view what we're planning on rolling out for future releases [over here](/docs/general/roadmap). We're always very transparent about what's coming for the future of Liphium. If you're curious, just check it out. If you want to suggest something for the future, you can create an issue over on GitHub.

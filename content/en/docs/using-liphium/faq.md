@@ -20,7 +20,7 @@ In this frequently asked questions page, you'll find answers to questions about 
 
 **2.** Click {{< icon >}}content_copy{{< /icon >}} next to your display name to copy your own username to your clipboard.
 
-If you want to add anyone, you might want to check out [this guide](./friend-adding).
+If you want to add anyone, you might want to check out [this guide](/docs/using-liphium/friend-adding).
 
 ### How do I find my own address?
 
@@ -30,7 +30,7 @@ If you want to add anyone, you might want to check out [this guide](./friend-add
 
 **3.** Below "Your address", click "Copy address".
 
-If you want to add anyone by using this address, you might want to check out [this guide](./friend-adding#adding-someone-in-a-different-town).
+If you want to add anyone by using this address, you might want to check out [this guide](/docs/using-liphium/friend-adding#adding-someone-in-a-different-town).
 
 ### What does it mean to share my keys with someone?
 

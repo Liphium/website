@@ -14,7 +14,7 @@ Guides on how to manage group permissions are currently still missing. We're sti
 
 **1.** Click on {{< icon >}}chat_bubble{{< /icon >}} in the search input in the top of the sidebar on desktop or click {{< icon >}}group_add{{< /icon >}} in the bottom right of the {{< icon >}}chat_bubble{{< /icon >}} tab on mobile.
 
-**2.** Select all the members you want in your conversations by clicking on them. If you don't have any friends / contacts yet, there is a guide on how to add them available [here](./friend-system).
+**2.** Select all the members you want in your conversations by clicking on them. If you don't have any friends / contacts yet, there is a guide on how to add them available [here](/docs/using-liphium/friend-system).
 
 **3.** If you have selected more than one member, you will be prompted to also enter a "Conversation name". That's the name of your conversation. If you just selected one member, the name of the conversation will be the name of the other person.
 

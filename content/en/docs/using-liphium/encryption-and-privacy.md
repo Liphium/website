@@ -18,7 +18,7 @@ Before I start, a short summary of all the pitfalls the encryption on Liphium ha
 
 - A server that is involved in the communication pipeline could technically break Liphium's end-to-end encryption (like on any other end-to-end encrypted messenger) which is why you need to compare verification codes if you want to be 100% secure.
 
-- Your status and profile picture are encrypted using a key that never changes and is shared with everyone you send a friend request to. This means friends you remove can still decrypt your status and profile picture. You can learn more about this [here](./faq#what-does-it-mean-to-share-my-keys-with-someone).
+- Your status and profile picture are encrypted using a key that never changes and is shared with everyone you send a friend request to. This means friends you remove can still decrypt your status and profile picture. You can learn more about this [here](/docs/using-liphium/faq#what-does-it-mean-to-share-my-keys-with-someone).
 
 - A conversation on Liphium only has one key meaning all previous members of a conversation can technically decrypt all of the new messages being sent in it. Any new members can also read the entire chat history of a conversation.
 
@@ -42,7 +42,7 @@ Every Liphium account has 2 key pairs: A signature and an encryption key pair. O
 
 - **Vault key**: Everything like friends, files and even your library will be encrypted using the vault key before being sent to the server. This key will also be sent to the server in encrypted form. Through this approach I make sure that the server can never know what friends you have and what kind of other things you might be storing there.
 
-- **Profile key**: The profile key is given to all friends you add to allow them to decrypt your profile picture and status. I use one key for everyone here because I want performance to stay the same no matter how many friends you have (issues with this are covered [here](./faq#what-does-it-mean-to-share-my-keys-with-someone)).
+- **Profile key**: The profile key is given to all friends you add to allow them to decrypt your profile picture and status. I use one key for everyone here because I want performance to stay the same no matter how many friends you have (issues with this are covered [here](/docs/using-liphium/faq#what-does-it-mean-to-share-my-keys-with-someone)).
 
 - **Stored action key**: The stored action key is not actually an encryption key, but a token that is sent to friends to make sure they can always send you conversation invites as I limit the amount of unauthenticated conversation invites and friend requests (what I call stored actions) that can be sent to you to prevent the database becoming to big. For this reason, the server also knows your stored action key.
 
