@@ -22,7 +22,7 @@ The platform availability for Liphium is currently limited as we are still worki
 
 ### Where your data is stored
 
-Liphium generally only stores stuff in one location except for the temporary directory of your operating system. If you want to know more about where Liphium is storing certain data, you can find out more about that [in the storage locations part](../using-liphium/storage-locations).
+Liphium generally only stores stuff in one location except for the temporary directory of your operating system. If you want to know more about where Liphium is storing certain data, you can find out more about that [in the storage locations part](/docs/using-liphium/storage-locations).
 
 ### Windows
 
