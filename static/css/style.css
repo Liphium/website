@@ -54,6 +54,26 @@ body {
   margin-bottom: 2rem;
 }
 
+.text-normal {
+  color: var(--text) !important;
+}
+
+.button {
+  background-color: var(--primary);
+  color: var(--text);
+  padding: 0.8rem 1.5rem;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  border: 2px dotted transparent;
+}
+
+.button:hover {
+  border: 2px dotted var(--accent);
+}
+
 .center {
   width: 100%;
   display: flex;

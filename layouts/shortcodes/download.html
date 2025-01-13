@@ -1,0 +1,36 @@
+<div id="download-buttons">
+    {{ range .Page.Params.platforms.list }}
+    <a href="{{ .link }}" class=" button download-button" target="_blank" id="{{ .id }}-button">
+        {{ .text }}
+    </a>
+    {{ end }}
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const userAgent = navigator.userAgent.toLowerCase();
+        const buttons = document.getElementById('download-buttons').children;
+
+        // Show appropriate button based on platform
+        if (userAgent.includes('mac')) {
+            document.getElementById('windows-button').style.display = 'inline-block';
+        } else if (userAgent.includes('mac')) {
+            document.getElementById('mac-button').style.display = 'inline-block';
+        } else if (userAgent.includes('linux')) {
+            document.getElementById('linux-button').style.display = 'inline-block';
+        } else {
+            // If platform cannot be detected, show all buttons
+            for (let button of buttons) {
+                button.style.display = 'inline-block';
+            }
+        }
+    });
+</script>
+
+
+<style>
+    .download-button {
+        display: none;
+        text-decoration: none !important;
+    }
+</style>
