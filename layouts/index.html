@@ -10,8 +10,12 @@
         <p class="hero-text sec-text">
             {{ .Params.hero.description }}
         </p>
+        <div class="row center hero-buttons">
+            <a href="/docs/general/download" class="primary-button">Get the app</a>
+            <a href="/docs" class="button">Help & resources</a>
+        </div>
     </div>
-
+     
     <div class="features">
 
         <div class="row aos">
@@ -41,6 +45,11 @@
         align-items: center;
         justify-content: center;
         gap: 2em;
+    }
+
+    .hero-buttons {
+        gap: 1em;
+        flex-wrap: wrap;
     }
 
     .hero-logo {

@@ -54,6 +54,42 @@ body {
   margin-bottom: 2rem;
 }
 
+.text-normal {
+  color: var(--text) !important;
+}
+
+.button {
+  background-color: var(--background2);
+  color: var(--text);
+  padding: 0.8rem 1.5rem;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  border: 2px dotted transparent;
+  text-decoration: none !important;
+}
+
+.primary-button {
+  background-color: var(--primary);
+  color: var(--text);
+  padding: 0.8rem 1.5rem;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  border: 2px dotted transparent;
+  text-decoration: none !important;
+}
+
+.button:hover,
+.primary-button:hover {
+  border: 2px dotted var(--accent);
+  text-decoration: none !important;
+}
+
 .center {
   width: 100%;
   display: flex;
