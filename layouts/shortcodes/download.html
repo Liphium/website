@@ -4,25 +4,23 @@
         {{ .text }}
     </a>
     {{ end }}
+    <p class="text-normal no-pad" id="platform-error" style="display: none;">{{ .Page.Params.platforms.error }}</p>
 </div>
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const userAgent = navigator.userAgent.toLowerCase();
-        const buttons = document.getElementById('download-buttons').children;
+        let platformFound = false;
 
-        // Show appropriate button based on platform
-        if (userAgent.includes('mac')) {
-            document.getElementById('windows-button').style.display = 'inline-block';
-        } else if (userAgent.includes('mac')) {
-            document.getElementById('mac-button').style.display = 'inline-block';
-        } else if (userAgent.includes('linux')) {
-            document.getElementById('linux-button').style.display = 'inline-block';
-        } else {
-            // If platform cannot be detected, show all buttons
-            for (let button of buttons) {
-                button.style.display = 'inline-block';
+        {{ range .Page.Params.platforms.list }}
+            if (userAgent.includes('{{ .agent }}')) {
+                document.getElementById('{{ .id }}-button').style.display = 'inline-block';
+                platformFound = true;
             }
+        {{ end }}
+
+        if (!platformFound) {
+            document.getElementById("platform-error").style.display = 'inline-block';
         }
     });
 </script>

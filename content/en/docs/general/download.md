@@ -1,6 +1,6 @@
 ---
 title: "Download the app"
-description: "What you guys frequently ask us, the solution to your problem might be here!"
+description: "Where to download Liphium no matter which platform you're on."
 menus:
   3general:
     weight: 4
