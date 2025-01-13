@@ -1,6 +1,6 @@
 <div id="download-buttons">
     {{ range .Page.Params.platforms.list }}
-    <a href="{{ .link }}" class=" button download-button" target="_blank" id="{{ .id }}-button">
+    <a href="{{ .link }}" class="primary-button" target="_blank" id="{{ .id }}-button" style="display: none;">
         {{ .text }}
     </a>
     {{ end }}
@@ -26,11 +26,3 @@
         }
     });
 </script>
-
-
-<style>
-    .download-button {
-        display: none;
-        text-decoration: none !important;
-    }
-</style>
