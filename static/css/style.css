@@ -262,6 +262,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+    z-index: 100;
 
     a {
       text-decoration: none;
