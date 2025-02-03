@@ -7,7 +7,7 @@ menus:
 
 # Download for Windows
 platforms:
-  error: "There is currently no version available for your platform. We're working on making Liphium available to more platforms."
+  error: "There is currently no version available for your platform. We're working on making Liphium available on more platforms."
   list:
     - name: "Windows"
       id: "windows"
