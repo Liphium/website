@@ -37,13 +37,6 @@ After the Beta is released, we'll take a whole month to ship out Liphium to as m
 
 ### The rest of 2025
 
-Well, 1.0.0 makes this year exciting already, but if you are a developer you'll be even more excited for what's coming after.
+Well, 1.0.0 makes this year exciting already, but I think for the rest of the year there will be plenty of things to get excited about as well. Since 1.0.0 will not have a mobile app most likely, I've actually been working on that side of Liphium for quite a while. It shouldn't take that long to get it working properly, but there are of course still some things that need improvement as always. There are lots of ideas floating around in my head and one of them is actually already quite far when it comes to the concepting phase. You'll hear about that one when the time is right and I don't want to spoil it because that would be boring. So for now, 1.0.0 should be exciting enough, I'm sure we'll publish another roadmap after it's done because, well, development also needs to continue after it.
 
-That's right, the community makes an app what it is and I want to also give everyone in the community the ability to contribute, not just by contributing to the Liphium codebase, but also by publishing themes and maybe even extensions that allow Liphium to be even better than it is currently. Therefore, the rest of 2025 will be focused on just that. Just to get you excited, here are a few ideas that I've been playing around with in my head:
-
-- Tabletop needs a rewrite anyway as mentioned above, so what if we made a **Liphium Realtime SDK** to use a Liphium Town's resources for managing multiplayer and real-time apps like Tabletop. This could enable more than just Tabletop and also allow developers to build their own apps/games (native to Liphium) without needing a server.
-- Wouldn't it be cool if Tabletop had persistence? For that reason, I think it would be cool to build a **Liphium Projects SDK** that would give you direct access to Liphium's files and vault API to upload project files or project state and have a projects list or even other more complex things stored in there.
-
-Don't think that any of the things listed above will arrive in 2025 or ever even be created in the first place, but they're just ideas so you know what I'm looking towards. Of course there are also other ideas floating around in my head to make Liphium even more unique. But those things are good surprises when the time is right and I don't want to spoil it because that would be boring. So for now, this will have to be enough.
-
-I hope that there's at least something in this roadmap you're excited about and with that we shall hope that 2025 will be another good year of development.
+Just so you know, 1.0.0 is not the end. Far from it actually. My dreams about what to do with this platform are nearly not over and trust me when I say this: Liphium has so much more potential to push the boundaries of what a chat app can do even further. And 1.0.0 is just the beginning of this journey.
