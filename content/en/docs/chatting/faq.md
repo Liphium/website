@@ -1,18 +1,12 @@
 ---
 title: "Frequently asked questions"
-description: "All your questions about the Liphium app answered."
+description: "Everything that's frequently asked about chatting on Liphium."
 menus:
-  4usage:
+  4chatting:
     weight: 2
 ---
 
-{{< hint >}}
-If you have a question that's about the general stuff and not specifically about usage, you might find your answer <a href="/docs/general/faq">here</a> instead since we have a separate FAQ for all questions about everything else.
-{{< /hint >}}
-
-Welcome to our frequently asked questions page. If you have any question that should be here, please let us know! We'd like to expand this page to include as much information as possible because a lot of people only look for answers here.
-
-In this frequently asked questions page, you'll find answers to questions about things we couldn't fit into the specialized usage guides. If you're searching for those, you'll find them in the sidebar or by pressing the button in the bottom right of your screen if you're on mobile.
+In this frequently asked questions page, you'll find answers to questions about things we couldn't fit into the specialized usage guides for **chatting**. If anything is missing, please let us know!
 
 ### How do I find my own username?
 

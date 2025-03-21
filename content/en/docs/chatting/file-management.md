@@ -2,7 +2,7 @@
 title: "File sharing & management"
 description: "How to share files through conversations and use Zap on Liphium."
 menus:
-  4usage:
+  4chatting:
     weight: 5
 ---
 

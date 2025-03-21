@@ -3,7 +3,7 @@ title: "Download the app"
 description: "Where to download Liphium no matter which platform you're on."
 menus:
   3general:
-    weight: 4
+    weight: 2
 
 # Download for Windows
 platforms:

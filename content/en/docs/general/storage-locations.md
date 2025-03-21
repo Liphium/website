@@ -2,15 +2,15 @@
 title: "Storage locations"
 description: "Where Liphium stores your files, the local database & more."
 menus:
-  4usage:
-    weight: 7
+  3general:
+    weight: 6
 ---
 
 {{< hint >}}
 You can generally not find app data from within the file explorer on mobile platforms. I want to introduce ways of browsing stored files and mopre from within the app in the future, but right now this feature is not available. That's why all of the options listed here are not available on mobile.
 {{< /hint >}}
 
-Liphium generally only stores data in one central place. Depending on the platform this place can be quite different though. So for everyone trying to delete all of their old data or just wanting to look around in the data the app stores: Here's where you can find all of this information. 
+Liphium generally only stores data in one central place. Depending on the platform this place can be quite different though. So for everyone trying to delete all of their old data or just wanting to look around in the data the app stores: Here's where you can find all of this information.
 
 ### Finding where your files are stored
 
@@ -39,5 +39,6 @@ Liphium stores a lot of data, like your local database, in a central folder that
 If you don't have Liphium installed anymore, here are the specific locations per currently supported platform. If a platform is missing, please let us know by [opening a discussion or issue](https://github.com/Liphium).
 
 **Windows**
+
 - %appdata%\com.liphium\chat_interface
 - %temp%\liphium

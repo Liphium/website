@@ -2,7 +2,7 @@
 title: "The friend system"
 description: "How to add your friends, remove and manage them on Liphium."
 menus:
-  4usage:
+  4chatting:
     weight: 3
 ---
 

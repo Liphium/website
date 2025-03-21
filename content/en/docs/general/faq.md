@@ -3,12 +3,8 @@ title: "Frequently asked questions"
 description: "What you guys frequently ask us, the solution to your problem might be here!"
 menus:
   3general:
-    weight: 2
+    weight: 3
 ---
-
-{{< hint >}}
-If you have a question that's not about the general operation but about usage of the app, you might find your answer <a href="/docs/using-liphium/faq">here</a> instead since we have a separate FAQ for all questions about the usage of the app.
-{{< /hint >}}
 
 Welcome to our frequently asked questions page. If you have any question that should be listed here, please let us know! We'd like to expand this page to include as much information as possible because a lot of people only look for answers here.
 

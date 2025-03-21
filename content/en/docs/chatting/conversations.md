@@ -2,7 +2,7 @@
 title: "Conversations & DMs"
 description: "How to create conversations and direct messages on Liphium."
 menus:
-  4usage:
+  4chatting:
     weight: 4
 ---
 

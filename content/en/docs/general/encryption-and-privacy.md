@@ -2,15 +2,15 @@
 title: "Encryption & privacy"
 description: "How to stay safe and the best practices for security on Liphium."
 menus:
-  4usage:
-    weight: 6
+  3general:
+    weight: 5
 ---
 
 {{<hint>}}
 This is an advanced page of the documentation. Complete understanding of this page requires some basic knowledge about encryption (especially public-key-cryptography) and also a basic understanding of how apps generally communicate with servers.
 {{</hint>}}
 
-On Liphium, as on every other end-to-end encrypted messaging platform, end-to-end encryption is **never 100% guaranteed**. With that said, there are also things specific to Liphium that make my end-to-end encryption a little Iaker than what other messengers like WhatsApp or Signal use. I want to be 100% transparent with how it could _potentially_ be abused and how you can stay safe. I'll tell you how a server could theoretically break the encryption in a conversation and what messages or other content people could potentially decrypt.
+On Liphium, as on every other end-to-end encrypted messaging platform, end-to-end encryption is **never 100% guaranteed**. With that said, there are also things specific to Liphium that make the end-to-end encryption a little less powerful than what other messengers like WhatsApp or Signal use. I want to be 100% transparent with how it could _potentially_ be abused and how you can stay safe. I'll tell you how a server could theoretically break the encryption in a conversation and what messages or other content people could potentially decrypt.
 
 ### TL:DR
 

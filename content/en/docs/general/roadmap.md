@@ -3,7 +3,7 @@ title: "Roadmap & the future"
 description: "Everything coming to Liphium in the near future, even what you can expect in the far future."
 menus:
   3general:
-    weight: 3
+    weight: 4
 ---
 
 Liphium is quite a large project and features come and go over time. If you have any suggestions for future additions or maybe even removals, make an issue on GitHub and maybe we'll consider what you want done. But please remember that Liphium is an open-source project and that we therefore work on the stuff that we want/need and often not what one person is demanding. If you want a better look at what was actually finished, you can check out [the changelog](https://github.com/Liphium/chat_interface/blob/main/CHANGELOG.md).
