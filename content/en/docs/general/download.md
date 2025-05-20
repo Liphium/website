@@ -16,6 +16,12 @@ platforms:
       text: "Open in Microsoft Store"
 ---
 
+{{<hint>}}
+
+Liphium is under heavy development. Please do not yet use the app unless you want to just poke around. Download at your own risk.
+
+{{</hint>}}
+
 The platform availability for Liphium is currently limited as we are still working on the app and are also still in the Beta phase. We hope you have a nice time on Liphium!
 
 {{< download >}}
