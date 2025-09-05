@@ -14,7 +14,9 @@ Below is stuff needed to please German officials (not that any of them will ever
 Julian "Unbreathable" Golenhofen
 
 c/o IP-Management #6901
+
 Ludwig-Erhard-Straße 18
+
 20459 Hamburg
 
 ### Redaktorisch verantwortlich
@@ -24,4 +26,5 @@ Julian "Unbreathable" Golenhofen
 ### Kontaktdaten
 
 E-Mail: contact@liphium.com (**no support**)
+
 Telefon: Auf Anfrage
