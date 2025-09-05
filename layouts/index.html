@@ -10,10 +10,6 @@
         <p class="hero-text sec-text">
             {{ .Params.hero.description }}
         </p>
-        <div class="row center hero-buttons">
-            <a href="/docs/general/download" class="primary-button">Get the app</a>
-            <a href="/docs" class="button">Help & resources</a>
-        </div>
     </div>
      
     <div class="features">
@@ -44,7 +40,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 2em;
+        flex-direction: column;
+        text-align: center;
     }
 
     .hero-buttons {
@@ -53,8 +50,8 @@
     }
 
     .hero-logo {
-        width: 6em;
-        height: 6em;
+        width: 8em;
+        height: 8em;
     }
 
     .hero-text {
@@ -65,8 +62,8 @@
     .hero-box {
         display: flex;
         flex-direction: column;
-        margin-top: 2em;
-        gap: 0em;
+        margin-top: 4em;
+        gap: 0.2em;
     }
 
     .hero-gradient {
