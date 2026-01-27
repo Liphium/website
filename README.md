@@ -1,2 +1,8 @@
-# The Liphium website, reimagined with Hugo
-I've tried out a couple of frameworks for building websites today and Hugo just seemed like the best option by far cause we can now use Markdown to easily edit the entire site without having to go into the HTML. That's gonna make things way easier for translation and more stuff. I'm also excited to get the blog working so I can finally publish some posts.
+# Liphium Website
+
+> [!WARNING]
+> The Liphium Website is currently in shambles again since I decided to rewrite it in Astro. It will be mobile compatible again at some point.
+
+This repository contains the code for [liphium.com](https://liphium.com), our official website.
+
+There you can find a list of all of our platforms, how to donate and also a few legal documents shared across our services.

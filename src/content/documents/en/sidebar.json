@@ -1,0 +1,28 @@
+[
+	{
+		"name": "Documents",
+		"links": [
+			{
+				"name": "Projects",
+				"link": "/projects"
+			},
+			{
+				"name": "Contributing",
+				"link": "/contributing"
+			}
+		]
+	},
+	{
+		"name": "Legal documents",
+		"links": [
+			{
+				"name": "Impressum",
+				"link": "/impressum"
+			},
+			{
+				"name": "Privacy & Terms",
+				"link": "/terms-and-privacy"
+			}
+		]
+	}
+]
