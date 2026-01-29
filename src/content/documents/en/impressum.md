@@ -3,7 +3,7 @@ title: "Impressum"
 description: "The legally required stuff for my country, Germany."
 ---
 
-If you are here to find support contact information and want to either do business with us or want to become a contributor for Liphium, you can reach out to us at support@liphium.com. Please don't expect any responses to inapproriate requests. Please only reach out if you have actual desire to do something with us. For all support related questions, you can join our Discord server or look around in the documentation.
+If you are here to find support contact information and want to either do business with us or want to become a contributor for Liphium, you can reach out to us at support[at]liphium.com. Please don't expect any responses to inapproriate requests. Please only reach out if you have actual desire to do something with us. For all support related questions, you can join our Discord server or look around in the documentation.
 
 Below is stuff needed to please German law.
 
