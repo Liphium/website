@@ -23,6 +23,6 @@ Julian "Unbreathable" Golenhofen
 
 ### Kontaktdaten
 
-E-Mail: legal@liphium.com (**no support**)
+E-Mail: legal[at]liphium.com (**no support**)
 
 Telefon: 07307 2010090

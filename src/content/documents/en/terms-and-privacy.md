@@ -56,4 +56,4 @@ We do not sell, trade, or otherwise transfer your personally identifiable inform
 
 ## Contact
 
-If you have any legal questions about how our Services use your information or have any other issues with this agreement or other legal requests, please reach out to us at [legal(at)liphium.com](mailto:legal@liphium.com). We don't bite, so just contact us if there's anything on your mind.
+If you have any legal questions about how our Services use your information or have any other issues with this agreement or other legal requests, please reach out to us at legal[at]liphium.com. We don't bite, so just contact us if there's anything on your mind.
